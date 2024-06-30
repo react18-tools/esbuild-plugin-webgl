@@ -1,5 +1,11 @@
 # esbuild-plugin-webgl
 
+## 0.0.2
+
+### Patch Changes
+
+- db446f5: Patch version
+
 ## 0.0.1
 
 ### Patch Changes

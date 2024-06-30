@@ -2,7 +2,7 @@
   "name": "esbuild-plugin-webgl",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESBuild plugin to load webGL shaders from .glsl files.",
   "license": "MPL-2.0",
   "main": "./dist/index.js",
