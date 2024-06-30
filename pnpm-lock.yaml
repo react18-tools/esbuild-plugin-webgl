@@ -78,8 +78,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-mouse-trails:
-        specifier: ^0.0.3
-        version: 0.0.3(@types/react@18.3.3)(react@18.3.1)
+        specifier: ^0.0.4
+        version: 0.0.4(@types/react@18.3.3)(react@18.3.1)
       react18-loaders:
         specifier: ^1.1.3
         version: 1.1.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
@@ -3929,8 +3929,8 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  react-mouse-trails@0.0.3:
-    resolution: {integrity: sha512-cEaLlgPfmeTt3nkFdd7zLQ33Tl9vBTcyU+USveX/Pn6ezk95jLNl2plw+terB9P1r6PECIshYx2NuXLM5eZdmA==}
+  react-mouse-trails@0.0.4:
+    resolution: {integrity: sha512-Ia5bsG2NJ6KQPditU9+mBXcc+vnAxSFf+Ay/otp3BxDdCu9ZmPkON55P1hRw1lQRtWxXdOHFShCl+rw7Io3zeQ==}
     peerDependencies:
       '@types/react': 16.8 - 19
       react: 16.8 - 19
@@ -9633,7 +9633,7 @@ snapshots:
       sucrase: 3.35.0
       use-editable: 2.3.3(react@18.3.1)
 
-  react-mouse-trails@0.0.3(@types/react@18.3.3)(react@18.3.1):
+  react-mouse-trails@0.0.4(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       react: 18.3.1
