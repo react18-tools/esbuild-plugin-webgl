@@ -10,6 +10,11 @@
       "id": "1dRWJhy45E1Rq5wZAmPHt",
       "description": "Update README as required",
       "columnId": "column-doing"
+    },
+    "236t7aKMywd4VgHp6PyIb": {
+      "id": "236t7aKMywd4VgHp6PyIb",
+      "description": "Publish canonicals",
+      "columnId": "column-doing"
     }
   },
   "columns": [
@@ -23,7 +28,8 @@
       "title": "Doing",
       "tasksIds": [
         "P_NrSJQ8m91Odgz8E1fS6",
-        "1dRWJhy45E1Rq5wZAmPHt"
+        "1dRWJhy45E1Rq5wZAmPHt",
+        "236t7aKMywd4VgHp6PyIb"
       ]
     }
   ]
