@@ -19,7 +19,7 @@ export const webglPlugin: () => Plugin = () => ({
         // remove line comments
         .replace(/\/\/.*/g, "")
         // remove white spaces around =
-        .replace(/ = /g, "=")
+        .replace(/ [=+*-/] /g, m => m.trim())
         .split("\n")
         .map(line => line.trim())
         .filter(Boolean);
