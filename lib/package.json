@@ -28,7 +28,7 @@
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^20.14.9",
     "@vitest/coverage-v8": "^1.6.0",
-    "esbuild": "^0.21.5",
+    "esbuild": "^0.22.0",
     "tsup": "^8.1.0",
     "typescript": "^5.5.2",
     "vite-tsconfig-paths": "^4.3.2",
