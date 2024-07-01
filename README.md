@@ -96,6 +96,32 @@ gl.compileShader(fragmentShader);
 
 ![Alt](https://repobeats.axiom.co/api/embed/a1fadcf8aa3054acff5d430c970af9e61254da5c.svg "Repobeats analytics image")
 
+## IDE and TypeScript Support
+
+To prevent IDE or TypeScript errors, create a declaration file in the project's root directory.
+
+```ts
+declare module "*.glsl" {
+  const value: string;
+  export default value;
+}
+```
+
+For users of Vitest, you can import the raw file by appending `?raw` to the import statement:
+
+```ts
+import fragSource from "frag.glsl?raw";
+```
+
+To resolve IDE issues, add the following to your `declarations.d.ts` file:
+
+```ts
+declare module "*.glsl?raw" {
+  const value: string;
+  export default value;
+}
+```
+
 ## Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, please open an issue. For major changes, please open a discussion first to discuss what you would like to change.
