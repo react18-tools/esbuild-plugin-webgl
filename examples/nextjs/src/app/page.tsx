@@ -1,6 +1,6 @@
 import MyButton from "./button";
 import { LandingPage } from "@repo/shared/dist/server";
-import { Demo } from "@repo/shared";
+import { Demo, RotatingCube } from "@repo/shared";
 
 export const metadata = {
   title: "Esbuild Plugin Webgl",
@@ -10,6 +10,7 @@ export const metadata = {
 export default function Page(): JSX.Element {
   return (
     <LandingPage title="Next.js Example">
+      <RotatingCube />
       <Demo />
       <MyButton />
     </LandingPage>

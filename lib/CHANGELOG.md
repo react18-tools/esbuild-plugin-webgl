@@ -1,5 +1,12 @@
 # esbuild-plugin-webgl
 
+## 0.0.3
+
+### Patch Changes
+
+- dcf38c7: Update operators
+- 7899ee7: Use text loader instead
+
 ## 0.0.2
 
 ### Patch Changes
