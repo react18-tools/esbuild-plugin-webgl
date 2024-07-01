@@ -12,7 +12,7 @@ describe("WebGL plugins", () => {
       bundle: true,
       minify: true,
       entryPoints: [path.resolve(__dirname, "shaders/render-frag.glsl")],
-      outdir: "dist",
+      outdir: "__tests__/dist",
       treeShaking: true,
       plugins: [webglPlugin()],
     });
