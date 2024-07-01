@@ -18,13 +18,13 @@ export const webglPlugin: () => Plugin = () => ({
         .replace(/\/\*.*\*\//gm, "")
         // remove line comments
         .replace(/\/\/.*/g, "")
-        // remove white spaces around =
-        .replace(/ [=+*-/] /g, m => m.trim())
+        // remove white spaces around operators
+        .replace(/ ([=+*-/%><&^|]|[=!><+*-/]=|&&|\|\||\^\^) /g, m => m.trim())
         .split("\n")
         .map(line => line.trim())
         .filter(Boolean);
-      const contents = `export default \`${lines[0]}\n${lines.slice(1).join("")}\``;
-      return { contents, loader: "ts" };
+      const contents = `${lines[0]}\n${lines.slice(1).join("")}`;
+      return { contents, loader: "text" };
     });
   },
 });
