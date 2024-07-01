@@ -4,7 +4,7 @@ import { mat4, glMatrix } from "gl-matrix";
 
 /** Create rotating Cube */
 export const createCube = (canvas: HTMLCanvasElement, gl: WebGLRenderingContext) => {
-  gl.clearColor(2.55, 2.55, 2.55, 1);
+  gl.clearColor(0, 0, 0, 0);
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   gl.enable(gl.DEPTH_TEST);
   gl.enable(gl.CULL_FACE);
@@ -162,7 +162,6 @@ export const createCube = (canvas: HTMLCanvasElement, gl: WebGLRenderingContext)
     mat4.mul(worldMatrix, yRotationMatrix, xRotationMatrix);
     gl.uniformMatrix4fv(matWorldUniformLocation, false, worldMatrix);
 
-    gl.clearColor(2.55, 2.55, 2.55, 1.0);
     gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT);
 
     gl.drawElements(gl.TRIANGLES, boxIndices.length, gl.UNSIGNED_SHORT, 0);
