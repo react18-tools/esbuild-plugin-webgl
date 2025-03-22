@@ -1,10 +1,10 @@
 import type { Plugin, PluginBuild } from "esbuild";
 import fs from "node:fs";
 
-/** generate randmo id */
+/** generate random id */
 const uuid = () => (Date.now() * Math.random()).toString(36).slice(0, 8);
 
-/** generate randmo name to avoid collision among the plugins */
+/** generate random name to avoid collision among the plugins */
 const name = `webgl-${uuid()}`;
 
 /** Plugin to load `.glsl` files as minified strings */
